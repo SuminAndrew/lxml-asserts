@@ -1,0 +1,4 @@
+[run]
+source = lxml_asserts/
+branch = True
+

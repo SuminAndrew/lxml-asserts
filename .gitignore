@@ -1,0 +1,12 @@
+*.pyc
+*~
+*.iml
+.idea/
+
+build
+dist
+lxml_asserts.egg-info/
+
+.coverage*
+!.coveragerc
+.tox/
