@@ -13,7 +13,7 @@ class TestHook(test):
 
 setup(
     name='lxml-asserts',
-    version='0.1',
+    version='0.1.1',
     description='Handy functions for testing lxml etree objects for equality and compatibility',
     url='https://github.com/SuminAndrew/lxml-asserts',
     author='Andrew Sumin',
