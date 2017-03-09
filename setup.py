@@ -7,13 +7,12 @@ from setuptools.command.test import test
 class TestHook(test):
     def run_tests(self):
         import nose
-        import logging
-        logging.disable(logging.CRITICAL)
-        nose.main(argv=['tests', '-v'])
+        nose.main(argv=['nosetests', 'tests/', '-v', '--logging-clear-handlers'])
+
 
 setup(
     name='lxml-asserts',
-    version='0.1.1',
+    version='0.1.2',
     description='Handy functions for testing lxml etree objects for equality and compatibility',
     url='https://github.com/SuminAndrew/lxml-asserts',
     author='Andrew Sumin',
@@ -41,7 +40,8 @@ setup(
     ],
     test_suite='tests',
     tests_require=[
-        'pep8'
+        'nose',
+        'pycodestyle == 2.3.1'
     ],
     zip_safe=False
 )
